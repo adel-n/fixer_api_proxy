@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an only API Rails application that gets currency rates from the Fixer API.
 
-Things you may want to cover:
+Ruby version: 2.5.3
 
-* Ruby version
+You can check the results with Postman by calling the following endpoint with GET.
+http://localhost:3000/get_exchange_rates?base=EUR&from=2020-08-01&to=2020-08-05&other=USD
 
-* System dependencies
+The params you need to set (all required):
+  base: base currency
+  other: other currency
+  from: from date
+  to: to date
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Database will be generated based on the schema.
